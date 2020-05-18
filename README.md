@@ -1,14 +1,14 @@
 # Quick start guide for F5 BIG-IP on VNG Cloud
 ## I. General setup
-step 1
+Login to the VNG Cloud Portal with your account
 ![VNG Cloud Portal Login](/img/vng-portal-login.png)
-step 2
+From the landing page, click on vMarketplace
 ![VNG Cloud Portal Login](/img/vng-portal-landingpage.png)
-step 3
+In the search text box of Marketplace, type bigip then select "F5-BIGIP Virtual Edtion - BYOL"
 ![VNG Cloud Portal Login](/img/vng-portal-marketplace-search-bigip.png)
-step 4
+Click on "LAUNCH ON COMPUTE ENGINE" from the product page of F5-BIGIP Virtual Edition - BYOL
 ![VNG Cloud Portal Login](/img/vng-portal-launch-bigip.png)
-step 5
+Choose the instance flavor as you want. It's recommended that you should start with 16GB RAM and 4 vCPU, with at least 80GB storage as root volume.
 ![VNG Cloud Portal Login](/img/vng-portal-bigip-instance-config.png)
 step 6
 ![VNG Cloud Portal Login](/img/vng-portal-bigip-launch-summary.png)
