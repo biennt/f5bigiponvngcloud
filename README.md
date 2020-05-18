@@ -25,23 +25,23 @@ Click on "LAUNCH ON COMPUTE ENGINE" from the product page of F5-BIGIP Virtual Ed
 ![VNG Cloud Portal Login](/img/vng-portal-launch-bigip.png)
 Choose the instance flavor as you want. It's recommended that you should start with 16GB RAM and 4 vCPU, with at least 80GB storage as root volume.
 ![VNG Cloud Portal Login](/img/vng-portal-bigip-instance-config.png)
-step 6
+Below is the summary page of what will be created and the cost
 ![VNG Cloud Portal Login](/img/vng-portal-bigip-launch-summary.png)
-step 7
+Prepare to checkout..
 ![VNG Cloud Portal Login](/img/vng-portal-checkout.png)
-step 8
+Applying any coupon..
 ![VNG Cloud Portal Login](/img/vng-bigip-checkout2.png)
-step 9
+Make the payment..
 ![VNG Cloud Portal Login](/img/vng-bigip-cloud-checkout3.png)
-step 10
+Payment confirmation
 ![VNG Cloud Portal Login](/img/vng-big-ip-checkout-done.png)
-step 11
+Wait for about 5 to 10 minutes, your instance will be ready as shown in the example below
 ![VNG Cloud Portal Login](/img/vng-bigip-instance-detail.png)
 ### Accessing F5 BIGIP Instance Management Interface <a name="I2"></a>
 Check your inbox, you will have an email from VNG Cloud team with detail of how to access your instance.<br>
 Example as the one below:
 ![VNG Cloud Portal Login](/img/vng-bigip-logindetail.png)
-step 11
+Adjusting your Security Group (inbound rules) to allow accessing ports 22/tcp, 8443/tcp for management of the instance itself. Other ports such as 80, 443 should be open for your application later on.
 ![VNG Cloud Portal Login](/img/vng-securitygroup.png)
 ### Licensing your F5 BIGIP instance <a name="I3"></a>
 ![VNG Cloud Portal Login](/img/vng-bigip-license.png)
