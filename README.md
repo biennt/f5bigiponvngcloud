@@ -1,18 +1,18 @@
 # Quick start guide for F5 BIG-IP on VNG Cloud
 # Table of Contents
 ## [I. General setup](#I)
-### [Launching F5 BIGIP Virtual Edition](#I1)
-### [Accessing F5 BIGIP Instance Management Interface](#I2)
-### [Licensing your F5 BIGIP instance](#I3)
-### [Provisioning modules](#I4)
-### [Changing the password](#I5)
+### [1.Launching F5 BIGIP Virtual Edition](#I1)
+### [2.Accessing F5 BIGIP Instance Management Interface](#I2)
+### [3.Licensing your F5 BIGIP instance](#I3)
+### [4.Provisioning modules](#I4)
+### [5.Changing the password](#I5)
 ## [II. Getting started - Advanced WAF](#II)
 ## [III. Getting started - Server Load Balancing](#III)
 ## [IV. Getting started - Global Server Load Balancing](#IV)
 
 
 ## I. General setup <a name="I"></a>
-### Launching F5 BIGIP Virtual Edition <a name="I1"></a>
+### 1.Launching F5 BIGIP Virtual Edition <a name="I1"></a>
 Login to the VNG Cloud Portal
 ![VNG Cloud Portal Login](/img/vng-portal-login.png)
 From the landing page, click on vMarketplace
@@ -37,13 +37,13 @@ Payment confirmation
 ![VNG Cloud Portal Login](/img/vng-big-ip-checkout-done.png)
 Wait for about 5 to 10 minutes, your instance will be ready as shown in the example below
 ![VNG Cloud Portal Login](/img/vng-bigip-instance-detail.png)
-### Accessing F5 BIGIP Instance Management Interface <a name="I2"></a>
+### 2.Accessing F5 BIGIP Instance Management Interface <a name="I2"></a>
 Check your inbox, you will have an email from VNG Cloud team with detail of how to access your instance.<br>
 Example as the one below:
 ![VNG Cloud Portal Login](/img/vng-bigip-logindetail.png)
 Adjusting your Security Group (inbound rules) to allow accessing ports 22/tcp, 8443/tcp for management interfaces of the instance itself. Other ports such as 80, 443 should be opened for your application later on.
 ![VNG Cloud Portal Login](/img/vng-securitygroup.png)
-### Licensing your F5 BIGIP instance <a name="I3"></a>
+### 3.Licensing your F5 BIGIP instance <a name="I3"></a>
 Access to the Web-based management interface of the F5 BIGIP instance as mentioned in the email from VNG Cloud team.<br>
 Typically, it is https://<wan_IP>:8443<br>
 Click on "Activate"
@@ -60,11 +60,16 @@ Step 4: Accept User Legal Agreement
 Step 5: Copy the content or download the license file
 ![VNG Cloud Portal Login](/img/license-activate3.png)
 Step 6: Paste the content of the license file into "License" text field of your F5 BIGIP instance. Then click Next<br>
-Your instance will be restarting some services and ready after few minutes
 ![VNG Cloud Portal Login](/img/license-activate4.png)
-### Provisioning modules <a name="I4"></a>
+Your instance will be restarting some services and ready after few minutes
+### 4.Provisioning modules <a name="I4"></a>
+Depend on your license and usage, you should go to System --> Resource Provisioning to turn on/off the modules.<br>
+Below is an example screenshot of activating Advanced Web Application Firewall and Application Visibility and Reporting modules.
 ![VNG Cloud Portal Login](/img/vng-bigip-provisioning.png)
-### Changing the password <a name="I5"></a>
+### 5.Changing the password <a name="I5"></a>
+Before starting to configure anything further, REMEMBER TO CHANGE THE PASSSWORD of admin user.<br>
+Goto System --> Users --> User List --> Select admin user --> Change the password. You can give "admin" the access to SSH by selecting "Advanced Shell" or "tmsh".<br>
+If you open SSH to public, REMEMBER to change the ROOT password as well. Make it very difficult or disable root login completely.
 ![VNG Cloud Portal Login](/img/change-password.png)
 
 ## II. Getting started - Advanced WAF <a name="II"></a>
