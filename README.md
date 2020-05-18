@@ -1,9 +1,9 @@
 # Quick start guide for F5 BIG-IP on VNG Cloud
 # Table of Contents
-## I. [General setup](#I)
-## II. [Getting started - Advanced WAF](#II)
-## III. [Getting started - Server Load Balancing](#III)
-## IV. [Getting started - Global Server Load Balancing](#IV)
+## [I. General setup](#I)
+## [II. Getting started - Advanced WAF](#II)
+## [III. Getting started - Server Load Balancing](#III)
+## [IV. Getting started - Global Server Load Balancing](#IV)
 
 
 ## I. General setup <a name="I"></a>
