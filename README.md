@@ -13,11 +13,13 @@
 
 ## I. General setup <a name="I"></a>
 ### Launching F5 BIGIP Virtual Edition <a name="I1"></a>
-Login to the VNG Cloud Portal with your account
+Login to the VNG Cloud Portal
 ![VNG Cloud Portal Login](/img/vng-portal-login.png)
 From the landing page, click on vMarketplace
 ![VNG Cloud Portal Login](/img/vng-portal-landingpage.png)
-In the search text box of Marketplace, type bigip then select "F5-BIGIP Virtual Edtion - BYOL"
+In the search text box of Marketplace, type bigip then select "F5-BIGIP Virtual Edtion - BYOL".<br>
+BYOL means Bring Your Own Licence - You need to have your own license to utilize the instance. Please have the license key with you before proceeding to the next steps.<br>
+If you want to get the trial license, please go here https://www.f5.com/trials/big-ip-virtual-edition
 ![VNG Cloud Portal Login](/img/vng-portal-marketplace-search-bigip.png)
 Click on "LAUNCH ON COMPUTE ENGINE" from the product page of F5-BIGIP Virtual Edition - BYOL
 ![VNG Cloud Portal Login](/img/vng-portal-launch-bigip.png)
@@ -36,6 +38,8 @@ step 10
 step 11
 ![VNG Cloud Portal Login](/img/vng-bigip-instance-detail.png)
 ### Accessing F5 BIGIP Instance Management Interface <a name="I2"></a>
+Check your inbox, you will have an email from VNG Cloud team with detail of how to access your instance.<br>
+Example as the one below:
 ![VNG Cloud Portal Login](/img/vng-bigip-logindetail.png)
 step 11
 ![VNG Cloud Portal Login](/img/vng-securitygroup.png)
