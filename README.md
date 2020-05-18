@@ -1,7 +1,7 @@
 # Quick start guide for F5 BIG-IP on VNG Cloud
 ## I. General setup
 to be updated
-![VNG Cloud Portal Login](/img/vng-portal-login)
+![VNG Cloud Portal Login](/img/vng-portal-login.png)
 ## II. Getting start - Advanced WAF
 to be updated
 ## III. Getting start - Server Load Balancing
