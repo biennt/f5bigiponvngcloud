@@ -41,7 +41,7 @@ Wait for about 5 to 10 minutes, your instance will be ready as shown in the exam
 Check your inbox, you will have an email from VNG Cloud team with detail of how to access your instance.<br>
 Example as the one below:
 ![VNG Cloud Portal Login](/img/vng-bigip-logindetail.png)
-Adjusting your Security Group (inbound rules) to allow accessing ports 22/tcp, 8443/tcp for management of the instance itself. Other ports such as 80, 443 should be open for your application later on.
+Adjusting your Security Group (inbound rules) to allow accessing ports 22/tcp, 8443/tcp for management interfaces of the instance itself. Other ports such as 80, 443 should be opened for your application later on.
 ![VNG Cloud Portal Login](/img/vng-securitygroup.png)
 ### Licensing your F5 BIGIP instance <a name="I3"></a>
 Access to the Web-based management interface of the F5 BIGIP instance as mentioned in the email from VNG Cloud team.<br>
@@ -51,13 +51,16 @@ Click on "Activate"
 Key in the license key string. If your instance can reach the internet directly, you can choose Automatic as Activation Method. If not, click on Manual and follow the next steps
 ![VNG Cloud Portal Login](/img/vng-bigip-license-key.png)
 Manual activation:<br>
-Step1: select and copy to clipboard all the text in "Dossier" 
+Step 1: select and copy to clipboard all the text in "Dossier"<br>
+Step 2: Click on "Click here to access F5 Licensing Server"<br>
+Step 3: Paste the Dossier text in https://activate.f5.com/license/dossier.jsp
 ![VNG Cloud Portal Login](/img/license-activate1.png)
-Step2: Click on "Click here to access F5 Licensing Server"
-![VNG Cloud Portal Login](/img/license-activate2.png)
-Step3: Paste the Dossier text in https://activate.f5.com/license/dossier.jsp
-![VNG Cloud Portal Login](/img/license-activate3.png)
 Step 4: Accept User Legal Agreement
+![VNG Cloud Portal Login](/img/license-activate2.png)
+Step 5: Copy the content or download the license file
+![VNG Cloud Portal Login](/img/license-activate3.png)
+Step 6: Paste the content of the license file into "License" text field of your F5 BIGIP instance. Then click Next<br>
+Your instance will be restarting some services and ready after few minutes
 ![VNG Cloud Portal Login](/img/license-activate4.png)
 ### Provisioning modules <a name="I4"></a>
 ![VNG Cloud Portal Login](/img/vng-bigip-provisioning.png)
