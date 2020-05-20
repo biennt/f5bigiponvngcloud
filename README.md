@@ -6,7 +6,7 @@
 ### [3.Licensing your F5 BIGIP instance](#I3)
 ### [4.Provisioning modules](#I4)
 ### [5.Changing the password](#I5)
-## [II. Getting started - Advanced WAF](#II)
+## [<a href='/waf/README.md'>II. Getting started - Advanced WAF</a>]
 ## [III. Getting started - Server Load Balancing](#III)
 ## [IV. Getting started - Global Server Load Balancing](#IV)
 
