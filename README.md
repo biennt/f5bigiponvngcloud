@@ -4,8 +4,9 @@
 ### [1.Launching F5 BIGIP Virtual Edition](#I1)
 ### [2.Accessing F5 BIGIP Instance Management Interface](#I2)
 ### [3.Licensing your F5 BIGIP instance](#I3)
-### [4.Provisioning modules](#I4)
-### [5.Changing the password](#I5)
+### [4.Re-configure the network](#I4)
+### [5.Provisioning modules](#I5)
+### [6.Changing the password](#I6)
 ## <a href='/waf/README.md'>II. Getting started - Advanced WAF</a>
 ## <a href='/slb/README.md'>III. Getting started - Server Load Balancing</a>
 ## <a href='/gslb/README.md'>IV. Getting started - Global Server Load Balancing</a>
@@ -70,8 +71,8 @@ Disable DHCP on management interface
 ```
 modify sys db dhclient.mgmt value disable
 ```
-Re-configure the self IP and adding a default route
-(10.4.222.3/4 and 10.4.222.1 are the ip address and default gateway assigned by DHCP on VNG Cloud on instance start)
+Re-configure the self IP and adding a default route<br>
+(10.4.222.3/24 and 10.4.222.1 are the ip address and default gateway assigned by DHCP on VNG Cloud on instance start)
 ```
 create net self self1_nic address 10.4.222.3/24 vlan internal
 create net route defaultroute network 0.0.0.0/0 gw 10.4.222.1
@@ -84,7 +85,7 @@ save sys config
 Depend on your license and usage, you should go to System --> Resource Provisioning to turn on/off the modules.<br>
 Below is an example screenshot of activating Advanced Web Application Firewall and Application Visibility and Reporting modules.
 ![VNG Cloud Portal Login](/img/vng-bigip-provisioning.png)
-### 5.Changing the password <a name="I5"></a>
+### 6.Changing the password <a name="I6"></a>
 Before starting to configure anything further, REMEMBER TO CHANGE THE PASSSWORD of admin user.<br>
 Goto System --> Users --> User List --> Select admin user --> Change the password. You can give "admin" the access to SSH by selecting "Advanced Shell" or "tmsh".<br>
 If you open SSH to public, REMEMBER to change the ROOT password as well. Make it very difficult or disable root login completely.
