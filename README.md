@@ -61,7 +61,26 @@ Step 5: Copy the content or download the license file
 Step 6: Paste the content of the license file into "License" text field of your F5 BIGIP instance. Then click Next<br>
 ![VNG Cloud Portal Login](/img/license-activate4.png)
 Your instance will be restarting some services and ready after few minutes
-### 4.Provisioning modules <a name="I4"></a>
+### 4.Re-configure the network <a name="I4"></a>
+Access the instance via SSH by user root, then launch TMSH to re-configure the network settings
+```
+[root@bigip1:Active:Standalone] ~ # tmsh
+```
+Disable DHCP on management interface
+```
+modify sys db dhclient.mgmt value disable
+```
+Re-configure the self IP and adding a default route
+(10.4.222.3/4 and 10.4.222.1 are the ip address and default gateway assigned by DHCP on VNG Cloud on instance start)
+```
+create net self self1_nic address 10.4.222.3/24 vlan internal
+create net route defaultroute network 0.0.0.0/0 gw 10.4.222.1
+```
+Save the configuration
+```
+save sys config
+```
+### 5.Provisioning modules <a name="I5"></a>
 Depend on your license and usage, you should go to System --> Resource Provisioning to turn on/off the modules.<br>
 Below is an example screenshot of activating Advanced Web Application Firewall and Application Visibility and Reporting modules.
 ![VNG Cloud Portal Login](/img/vng-bigip-provisioning.png)
