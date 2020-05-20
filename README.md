@@ -6,10 +6,9 @@
 ### [3.Licensing your F5 BIGIP instance](#I3)
 ### [4.Provisioning modules](#I4)
 ### [5.Changing the password](#I5)
-## [<a href='/waf/README.md'>II. Getting started - Advanced WAF</a>]
-## [III. Getting started - Server Load Balancing](#III)
-## [IV. Getting started - Global Server Load Balancing](#IV)
-
+## <a href='/waf/README.md'>II. Getting started - Advanced WAF</a>
+## <a href='/slb/README.md'>III. Getting started - Server Load Balancing</a>
+## <a href='/gslb/README.md'>IV. Getting started - Global Server Load Balancing</a>
 
 ## I. General setup <a name="I"></a>
 ### 1.Launching F5 BIGIP Virtual Edition <a name="I1"></a>
@@ -73,10 +72,3 @@ If you open SSH to public, REMEMBER to change the ROOT password as well. Make it
 ![VNG Cloud Portal Login](/img/change-password.png)
 You can continue with other tasks such as configuring NTP, timezone, hostname, DNS, remote syslog.. but they are optional sometimes. It's up to you.<br>
 You've just finished the basic setup of F5 BIGIP instance in VNG Cloud. Congratulation!<br>
-## II. Getting started - Advanced WAF <a name="II"></a>
-to be updated
-## III. Getting started - Server Load Balancing <a name="III"></a>
-to be updated
-## IV. Getting started - Global Server Load Balancing <a name="IV"></a>
-to be updated
-
