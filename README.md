@@ -92,4 +92,5 @@ If you open SSH to public, REMEMBER to change the ROOT password as well. Make it
 ![VNG Cloud Portal Login](/img/change-password.png)
 You can continue with other tasks such as configuring NTP, timezone, hostname, DNS, remote syslog.. but they are optional sometimes. It's up to you.<br>
 You've just finished the basic setup of F5 BIGIP instance in VNG Cloud.<br>
-Congratulation!
+Congratulation! and do not forget to check out the <a href='https://support.f5.com/csp/home'>F5 Networks official support page</a>
+
