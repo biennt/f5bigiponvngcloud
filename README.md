@@ -91,4 +91,5 @@ Goto System --> Users --> User List --> Select admin user --> Change the passwor
 If you open SSH to public, REMEMBER to change the ROOT password as well. Make it very difficult or disable root login completely.
 ![VNG Cloud Portal Login](/img/change-password.png)
 You can continue with other tasks such as configuring NTP, timezone, hostname, DNS, remote syslog.. but they are optional sometimes. It's up to you.<br>
-You've just finished the basic setup of F5 BIGIP instance in VNG Cloud. Congratulation!<br>
+You've just finished the basic setup of F5 BIGIP instance in VNG Cloud.<br>
+Congratulation!
