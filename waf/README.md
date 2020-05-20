@@ -1,5 +1,5 @@
 # Getting started - Advanced WAF
-
+OK Let's start
 ![waf1](/waf/img/waf1.png)
 ![waf2](/waf/img/waf2.png)
 ![waf3](/waf/img/waf3.png)
